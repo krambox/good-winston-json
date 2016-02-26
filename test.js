@@ -20,9 +20,9 @@ server.route({
 
 server.route({
   method: 'GET',
-  path: '/{name}',
+  path: '/error',
   handler: function (request, reply) {
-    reply('Hello, ' + encodeURIComponent(request.params.name) + '!');
+    throw new Error('Boom');
   }
 });
 
@@ -38,7 +38,7 @@ var options = {
       ops: '*'
     },
     config: {
-      winston: winston
+      logger: winston
     }
   }]
 };
@@ -54,6 +54,7 @@ server.register({
       console.info('Server started at ' + server.info.uri);
     });
 
-    server.log('info', 'This is not a real test');
+    server.log('info', 'Hello');
+    server.log('error', 'Error');
   }
 });
