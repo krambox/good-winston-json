@@ -1,0 +1,21 @@
+{
+  "name": "good-winston-json",
+  "version": "0.0.1",
+  "description": "good winston reporter with structured JSON output ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "good": "^6.6.0",
+    "hapi": "^13.0.0",
+    "winston": "^2.2.0"
+  },
+  "dependencies": {
+    "good-squeeze": "^2.1.0",
+    "hoek": "^3.0.4",
+    "lodash": "^4.5.1"
+  }
+}
