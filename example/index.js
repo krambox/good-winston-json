@@ -3,7 +3,7 @@
 var Hapi = require('hapi');
 var winston = require('winston');
 var server = new Hapi.Server();
-var GoodWinstonReporter = require('./lib');
+var GoodWinstonReporter = require('../lib');
 
 server.connection({ host: 'localhost', port: 3000 });
 
