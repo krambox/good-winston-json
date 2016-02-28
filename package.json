@@ -16,6 +16,7 @@
   "dependencies": {
     "good-squeeze": "^2.1.0",
     "hoek": "^3.0.4",
-    "joi": "^8.0.3"
+    "joi": "^8.0.3",
+    "through2": "^2.0.1"
   }
 }
