@@ -27,16 +27,15 @@ server.route({
 });
 
 var options = {
-  opsInterval: 1000,
+  opsInterval: 5000,
   reporters: [{
     reporter: GoodWinstonReporter,
     events: {
       log: '*',
-      /*
       request: '*',
       response: '*',
       error: '*',
-      ops: '*'*/
+      ops: '*'
     },
     config: {
       logger: winston
